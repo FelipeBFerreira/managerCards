@@ -21,43 +21,80 @@ header h1 {
         font-weight: 100;
 
 }
+
 .container{
-    width: min(90vw , 800px);
-    margin: auto;
+    width: min(90vw , 62.5rem);
+    margin: 0 auto;
+    border-radius: 1.25rem;
 }
 
-.cards{
+.wrapper{
     margin-top: -3.75rem;
-}
-
-.card{
-    background:#FFF;
+    display:grid;
+    grid-template-columns: 3.40rem repeat(5 ,1fr) 4.90rem;
+    background:#f0f2f5;
     padding: 1.5rem 2rem;
     border-radius: 0.25rem;
     margin-bottom: 2rem;
-    display: flex;
-    
-
+    align-items: center;
+   
 }
 
-.card h2{
-    color: white;
-    margin-top: 3.2rem;
-    color: #363f5f;
+/* Pegando o Primeiro Filho do selector Pai e aplicando o CSS*/
+.wrapper div:nth-child(1){
+    width: 3.25rem;
+}
+
+.card{
+    height: 100%;
+    padding: 0 0.25rem;
+    background:#FFF;
+    
+}
+
+.card h2,p{
+
+    text-align: center;
     font-weight: normal;
+    font-size: 1rem;
+    color:black;
+    margin-top: 3.5rem;
+    
+}
+.card p{
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
 }
 
 .card img{
-        width: 10rem;
-        height: 8rem;
-        
+    width: 10rem;
+    height: 8rem;
+   
+}
+.card a{
+    text-decoration: none;
 }
 
-.configuration{
-
+.card-save{
+    float: right;
+    max-width: 5rem;
+    background: green;
+    margin-top: 2.75rem;
+    margin-right: 0.50rem;
+    border-radius: 0.50rem;
+    
+   
 }
 
-.configuration img{
-    width: 2rem;
+.card-save img{ 
+    margin: 0.5rem 0 0 0.15rem;
+    padding: 0.20rem;
+    width: 3rem;
     height: 2rem;
 }
+.card-save img:{ 
+ 
+    color:#2196f3;
+}
+
+
