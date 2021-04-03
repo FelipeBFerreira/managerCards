@@ -7,23 +7,25 @@
 body {
     background:#f0f2f5;
     font-family: sans-serif;
+    
 }
 
 header {
     background: #2196f3;
     padding: 3.25rem 3rem  6rem 6rem;
-    text-align: center;
-
+    
 }
 
 header h1 {
         color: #FFF;
-        font-weight: 100;
+        font-family: 'Racing Sans One', cursive;
+        font-size: 4rem;
+        margin-left: 3.50rem;
 
 }
 
 .container{
-    width: min(90vw , 62.5rem);
+    max-width: 69.5rem;
     margin: 0 auto;
     border-radius: 1.25rem;
 }
@@ -31,70 +33,70 @@ header h1 {
 .wrapper{
     margin-top: -3.75rem;
     display:grid;
-    grid-template-columns: 3.40rem repeat(5 ,1fr) 4.90rem;
+    grid-template-columns: 10rem repeat(5 ,1fr) 4.90rem;
     background:#f0f2f5;
-    padding: 1.5rem 2rem;
-    border-radius: 0.25rem;
+    padding: 1.10rem 1rem;   
+    border-radius: 2rem;
     margin-bottom: 2rem;
     align-items: center;
    
 }
 
-/* Pegando o Primeiro Filho do selector Pai e aplicando o CSS*/
-.wrapper div:nth-child(1){
-    width: 3.25rem;
-}
-
 .card{
     height: 100%;
-    padding: 0 0.25rem;
     background:#FFF;
-    
+    position: relative;
+
 }
 
-.card h2,p{
-
+.card h1{
+    color:#2196f3;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 0.85rem;
     text-align: center;
-    font-weight: normal;
+    margin-top: 1.5rem;
+}
+
+.car-img{
+    width: 100%;
+    height: 100%;
+
+}
+
+.car-img > img{
+    width: 100%;
+    height: 100%;
+}   
+
+.card h2,p{
+    text-align: center;
     font-size: 1rem;
     color:black;
     margin-top: 3.5rem;
-    
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+
 }
 .card p{
     margin-bottom: 2rem;
     margin-top: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
 }
-
-.card img{
-    width: 10rem;
-    height: 8rem;
-   
-}
-.card a{
-    text-decoration: none;
-}
-
-.card-save{
-    float: right;
-    max-width: 5rem;
-    background: green;
+.card a button{
+    border:none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    margin: 0 auto;
     margin-top: 2.75rem;
-    margin-right: 0.50rem;
-    border-radius: 0.50rem;
+    width:100%;
+    height: 3rem;
+    border-radius: 1.25rem;
     
-   
 }
 
-.card-save img{ 
-    margin: 0.5rem 0 0 0.15rem;
-    padding: 0.20rem;
-    width: 3rem;
-    height: 2rem;
-}
-.card-save img:{ 
- 
-    color:#2196f3;
-}
-
+.card a button:hover{ 
+        background:#2196f3;
+ }
 
