@@ -16,12 +16,21 @@ header {
     
 }
 
-header h1 {
+header div h1 , h2{
         color: #007849;
         font-family: 'Racing Sans One', cursive;
         font-size: 4rem;
-        margin-left: 3.50rem;
+        text-align: center;
 
+}
+
+header div h2{
+    font-size: 2.25rem;
+}
+
+header div{
+    max-width: 25rem;
+    
 }
 
 .container, footer {
@@ -112,10 +121,24 @@ margin-left: 1.5rem;
  }
 
  footer{
-      text-align: center;
-    font-family: 'Inter' , sans-serif;
+    
+    margin-top: -3.55rem;
+    
+ }
+ footer div{
+     margin: 0 auto;
+     max-width: 11.25rem; 
+     text-align: center;
+   
+ }
+
+ footer div p , span{
+
+    text-align: center;
+    color: #007849;
+    font-family: 'Racing Sans One', cursive;
     font-weight: 600;
     font-size: 1.25rem;
-    color: #fff;
+    
 
 }
