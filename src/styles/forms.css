@@ -1,70 +1,82 @@
-header {
-    background: #4abcac;
-    
-    padding: 3.25rem 3rem  6rem 6rem;
-    
+:root{
+    --logoColor: #FFF;
+    --bodyBackground: #d7cec7;
+    --formBackground:#fc4a1a;
+    --labelColor: #fff;
+    --inputColor: #fff;
+    --buttonColor: #f7b733;
+    --buttonLabel: #fff;
+    --buttonHover: #fff ;
 }
 
-header div{
-    max-width: 25rem;
+body{
+    background: var(--bodyBackground); 
     margin: 0 auto;
 }
+.container{
+    margin: 15rem auto;
+    
+}
+h1{ 
 
-header div h1 , h2{ 
-        color: #007849;
+        color: var(--logoColor);
         font-family: 'Racing Sans One', cursive;
         font-size: 4rem;
         text-align: center;
-
-}
-
-header div h2{
-    font-size: 2.25rem;
-}
-
-.container-signup{
-    box-sizing: border-box;
-    margin:  0 auto;
-    max-width: 15rem; 
-    margin-top: -2rem;
-    background: purple;
 }
 
 .signup{
-    height: 15rem;
-    text-align: center;
-    box-sizing: block;
-     background:yellow   
-}
-.signup form{
- max-width: 15rem;
-}
-
-.container, footer {
-    max-width: 69.5rem;
+    
+    max-width: 12rem;
+    height: 12rem;
+    padding: 2rem;
+    background: var(--formBackground);
     margin: 0 auto;
-    border-radius: 1.25rem;
-
-}
-
-footer{
-
-    margin-top: -3.55rem; 
-}
-footer div{
-
- margin: 0 auto;
- max-width: 11.25rem; 
- text-align: center;
-
-}
-
-footer div p , span{
-
     text-align: center;
-    color: #007849;
-    font-family: 'Racing Sans One', cursive;
+    border-radius: 1.25rem;
+}
+
+form{
+    padding: 0.5rem;
+    margin-top: 0.85rem;
+    
+  
+}
+
+label{  
+    font-family: 'Inter', sans-serif;
     font-weight: 600;
+    color: var(--labelColor);
+}
+
+input{
+    height: 1.5rem;
+    margin: 0.35rem 0;
+    border-radius: 0.55rem;
+    background: var(--inputColor);
+    border:none;
+  
+}
+
+button{
+    width:6rem;
+    border-radius: 1.25rem;
+    padding: 0.50rem;
+    margin-top: 0.35rem;
+    color: var(--buttonLabel);
+    background: var(--buttonColor);
+    
+    
+}
+button:hover{
+    color: var(--buttonColor);
+    background: var(--buttonHover);
+}
+ p{
+    text-align: center;
+    color: var(--logoColor);
+    font-family: 'Racing Sans One', cursive;
+    font-weight: 400;
     font-size: 1.25rem;
 
 }
