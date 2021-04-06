@@ -4,12 +4,46 @@
     box-sizing: border-box;
 }
 
+
+/* user-agent font-size is 16px, let's make it responsive */
+@media(max-width: 1080px) {
+    html {
+      font-size: 93.75%; /* 15px */
+      size: 90%;
+    }
+  }
+  
+  @media(max-width: 970px) {
+    html {
+      font-size: 87.5%; /* 14px */
+    }
+  }
+  
+  @media(max-width:700px) {
+    :root {
+      font-size: 75%; /* 12px */
+    }
+  }
+  
+  @media(max-width: 590px) {
+    :root {
+      font-size: 62.25%; /* 10px */
+    }
+  }
+  
+  /* Begin Linha alterado para favorecer a Respansividade de aplicativos de tela menor*/
+  @media(max-width: 450px) {
+    :root {
+      font-size: 42.25%; /* 10px */
+        
+    }
+  }
+  
 :root{
     --logoColor: #FFF;
     --headerBackground:#00303f;
     --bodyBackground: #fff;
     --labelColor: #015249;
-    
     
 }
 
@@ -22,7 +56,7 @@ body {
 header {
     background: var(--headerBackground);
     padding: 3.25rem 3rem  6rem 6rem;
-    
+    width: 1000vh;
 }
 
 header div h1{
@@ -30,7 +64,6 @@ header div h1{
         font-family: 'Racing Sans One', cursive;
         font-size: 3rem;
         text-align: center;
-
 }
 
 header div{
