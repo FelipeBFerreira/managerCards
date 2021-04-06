@@ -6,31 +6,31 @@
         <%- include('../partials/header')%>
             <main>
                 <section class="container">
-
+                    
+                   <% registro.forEach( (registro) => { %>
+        
                     <div class="wrapper">
                         <div class="card">
-
-                            <img src="/images/cars.png" alt="Veiculo">
-
+                            <img src="<%= registro.imagesCar%>" alt="Veiculo">
                         </div>
                         <div class="card">
-                            <h2>1</h2>
+                            <h2><%= registro.id%></h2>
                         </div>
                         <div class="card">
-                            <h2> Argo Drive 1.0</h2>
-                            <p>2021</p>
-                        </div>
-                        <div class="card">
-
-                            <h2>Locadoza</h2>
+                            <h2><%= registro.descriptionCar%></h2>
+                            <p><%= registro.yearCar%></p>
                         </div>
                         <div class="card">
 
-                            <h2>19251350</h2>
+                            <h2><%= registro.locationCar%></h2>
                         </div>
                         <div class="card">
 
-                            <h2>Aecio</h2>
+                            <h2><%= registro.MileageCar%></h2>
+                        </div>
+                        <div class="card">
+
+                            <h2><%= registro.ConductorCar%></h2>
                         </div>
                         <div class="card">
 
@@ -40,130 +40,7 @@
                         </div>
 
                     </div>
-                    <div class="wrapper">
-
-                        <div class="card">
-
-                            <img src="/images/car.png" alt="Veiculo">
-
-                        </div>
-                        <div class="card">
-                            <h2>2</h2>
-                        </div>
-                        <div class="card">
-                            <h2> Argo Drive 1.0</h2>
-                            <p>2021</p>
-                        </div>
-                        <div class="card">
-                            <h2>Locadora</h2>
-                        </div>
-                        <div class="card">
-                            <h2>00000000</h2>
-                        </div>
-                        <div class="card">
-                            <h2>Aecio</h2>
-                        </div>
-                        <div class="card">
-
-                            <a href="http://www.google.com"><button>
-                                    Consulta</button> </a>
-
-                        </div>
-
-                    </div>
-                    <div class="wrapper">
-
-                        <div class="card">
-
-                            <img src="/images/car.png" alt="Veiculo">
-
-                        </div>
-                        <div class="card">
-                            <h2>2</h2>
-                        </div>
-                        <div class="card">
-                            <h2> Argo Drive 1.0</h2>
-                            <p>2021</p>
-                        </div>
-                        <div class="card">
-                            <h2>Locadora</h2>
-                        </div>
-                        <div class="card">
-                            <h2>00000000</h2>
-                        </div>
-                        <div class="card">
-                            <h2>Aecio</h2>
-                        </div>
-                        <div class="card">
-
-                            <a href="http://www.google.com"><button>
-                                    Consulta</button> </a>
-
-                        </div>
-
-                    </div>
-                    <div class="wrapper">
-
-                        <div class="card">
-
-                            <img src="/images/car.png" alt="Veiculo">
-
-                        </div>
-                        <div class="card">
-                            <h2>2</h2>
-                        </div>
-                        <div class="card">
-                            <h2> Argo Drive 1.0</h2>
-                            <p>2021</p>
-                        </div>
-                        <div class="card">
-                            <h2>Locadora</h2>
-                        </div>
-                        <div class="card">
-                            <h2>00000000</h2>
-                        </div>
-                        <div class="card">
-                            <h2>Aecio</h2>
-                        </div>
-                        <div class="card">
-
-                            <a href="http://www.google.com"><button>
-                                    Consulta</button> </a>
-
-                        </div>
-
-                    </div>
-                    <div class="wrapper">
-
-                        <div class="card">
-
-                            <img src="/images/car.png" alt="Veiculo">
-
-                        </div>
-                        <div class="card">
-                            <h2>2</h2>
-                        </div>
-                        <div class="card">
-                            <h2> Argo Drive 1.0</h2>
-                            <p>2021</p>
-                        </div>
-                        <div class="card">
-                            <h2>Locadora</h2>
-                        </div>
-                        <div class="card">
-                            <h2>00000000</h2>
-                        </div>
-                        <div class="card">
-                            <h2>Aecio</h2>
-                        </div>
-                        <div class="card">
-
-                            <a href="http://www.google.com"><button>
-                                    Consulta</button> </a>
-
-                        </div>
-
-                    </div>
+                <% }) %> 
                 </section>
 
             </main>
