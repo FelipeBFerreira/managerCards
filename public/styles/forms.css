@@ -16,13 +16,13 @@ body{
     margin: 0 auto;
 }
 .container{
-    margin: 15rem auto;
+    margin: 10rem auto;
     
 }
 h1{ 
         color: var(--logoColor);
         font-family: 'Racing Sans One', cursive;
-        font-size: 5.25rem;
+        font-size: 4.25rem;
         text-align: center;
 }
 
@@ -30,7 +30,7 @@ h1{
     
     max-width: 25rem;
     height: 25rem;
-    padding: 2rem;
+    padding: 1rem;
     background: var(--formBackground);
     margin: 0 auto;
     text-align: center;
@@ -58,6 +58,7 @@ input{
     border-radius: 0.55rem;
     background: var(--inputColor);
     border:none;
+    
   
 }
 
@@ -78,6 +79,7 @@ button{
     margin-top: 0.35rem;
     color: var(--buttonLabel);
     background: var(--buttonColor);
+    border: none;
     
     
 }

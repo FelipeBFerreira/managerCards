@@ -9,7 +9,7 @@
 @media(max-width: 1080px) {
     html {
       font-size: 93.75%; /* 15px */
-      size: 90%;
+      
     }
   }
   
@@ -25,16 +25,17 @@
     }
   }
   
-  @media(max-width: 590px) {
+  @media(max-width: 600px) {
     :root {
-      font-size: 62.25%; /* 10px */
+      font-size: 60%; /* 10px */
     }
   }
   
   /* Begin Linha alterado para favorecer a Respansividade de aplicativos de tela menor*/
-  @media(max-width: 450px) {
+  @media(max-width: 500px) {
     :root {
-      font-size: 42.25%; /* 10px */
+      font-size: 40%; /* 10px */
+      
         
     }
   }

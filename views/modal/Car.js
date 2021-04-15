@@ -4,8 +4,8 @@ let cars = [
         id : 1,
         descriptionCar : "FIAT ARGO 1.0",
         yearCar :  2021,
-        imagesCar : "/images/cars.png",
-        MileageCar: 00000001,
+        imagesCar : "/images/car.png",
+        MileageCar: "00000001",
         locationCar : "Localiza",
         ConductorCar : "Aecio"
 
@@ -24,7 +24,37 @@ let cars = [
         id : 3,
         descriptionCar : "RENAULT 2.0",
         yearCar :  2020,
-        imagesCar : "/images/cars.png",
+        imagesCar : "/images/car.png",
+        MileageCar: 10000200,
+        locationCar : "Unidas",
+        ConductorCar : "Vitor"
+
+    },
+    {
+        id : 4,
+        descriptionCar : "RENAULT 2.0",
+        yearCar :  2020,
+        imagesCar : "/images/car.png",
+        MileageCar: 10000200,
+        locationCar : "Unidas",
+        ConductorCar : "Vitor"
+
+    },
+    {
+        id : 5,
+        descriptionCar : "RENAULT 2.0",
+        yearCar :  2020,
+        imagesCar : "/images/car.png",
+        MileageCar: 10000200,
+        locationCar : "Unidas",
+        ConductorCar : "Vitor"
+
+    },
+    {
+        id : 6,
+        descriptionCar : "RENAULT 2.0",
+        yearCar :  2020,
+        imagesCar : "/images/car.png",
         MileageCar: 10000200,
         locationCar : "Unidas",
         ConductorCar : "Vitor"
