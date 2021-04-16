@@ -6,43 +6,56 @@
         <%- include('../partials/header')%>
             <main>
                 <section class="container">
-                    
-                   <% registro.forEach( (registro) => { %>
-        
-                    <div class="wrapper">
-                        <div class="card">
-                            <img src="<%= registro.imagesCar%>" alt="Veiculo">
-                        </div>
-                        <div class="card">
-                            <h2><%= registro.id%></h2>
-                        </div>
-                        <div class="card">
-                            <h2><%= registro.descriptionCar%><p><%= registro.yearCar%></p></h2>
-                            
-                            
-                            
-                        </div>
-                        <div class="card">
 
-                            <h2><%= registro.locationCar%></h2>
+                    <% registro.forEach( (registro)=> { %>
+
+                        <div class="wrapper">
+                            <div class="card">
+                                <img src="<%= registro.imagesCar%>" alt="Veiculo">
+                            </div>
+                            <div class="card">
+                                <h2>
+                                    <%= registro.id%>
+                                </h2>
+                            </div>
+                            <div class="card">
+                                <h2>
+                                    <%= registro.descriptionCar%>
+                                        <p>
+                                            <%= registro.yearCar%>
+                                        </p>
+                                </h2>
+
+
+                            </div>
+                            <div class="card">
+
+                                <h2>
+                                    <%= registro.locationCar%>
+                                </h2>
+                            </div>
+                            <div class="card">
+
+                                <h2>
+                                    <%= registro.MileageCar%>
+                                </h2>
+                            </div>
+                            <div class="card">
+
+                                <h2>
+                                    <%= registro.ConductorCar%>
+                                </h2>
+                            </div>
+                            <div class="card">
+
+                                <a href="/car<%= registro.id%>"><button>
+                                        <h2> Consulta</h2>
+                                    </button> </a>
+
+                            </div>
+
                         </div>
-                        <div class="card">
-
-                            <h2><%= registro.MileageCar%></h2>
-                        </div>
-                        <div class="card">
-
-                            <h2><%= registro.ConductorCar%></h2>
-                        </div>
-                        <div class="card">
-
-                            <a href="http://www.google.com"><button>
-                                   <h2> Consulta</h2></button> </a>
-
-                        </div>
-
-                    </div>
-                <% }) %> 
+                        <% }) %>
                 </section>
 
             </main>

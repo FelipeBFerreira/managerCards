@@ -8,7 +8,7 @@
 /* user-agent font-size is 16px, let's make it responsive */
 @media(max-width: 1080px) {
     html {
-      font-size: 93.75%; /* 15px */
+      font-size: 80.75%; /* 15px */
       
     }
   }
@@ -57,7 +57,12 @@ body {
 header {
     background: var(--headerBackground);
     padding: 3.25rem 3rem  6rem 6rem;
-    width: 1000vh;
+    
+}
+
+header div{
+  max-width: 25rem;
+  
 }
 
 header div h1{
@@ -67,10 +72,7 @@ header div h1{
         text-align: center;
 }
 
-header div{
-    max-width: 25rem;
-    
-}
+
 
 .container, footer {
     max-width: 69.5rem;

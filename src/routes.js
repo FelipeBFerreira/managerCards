@@ -6,6 +6,8 @@ const carController = require('../views/controllers/carController');
 
 
 routes.get('/', carController.index)
+routes.get('/car:id' , carController.show)
 routes.get('/login' , loginController.login)
+
 
 module.exports = routes;
