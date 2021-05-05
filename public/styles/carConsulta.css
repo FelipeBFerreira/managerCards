@@ -24,7 +24,7 @@
       border-radius: 1.25rem 1.25rem 0 0;
 }
 
-.carInformation div img{
+.imgCar{
     width: 15.63rem;
     height: 12.50rem;
     border-radius: 2rem;
@@ -33,7 +33,7 @@
 
 .description{
     padding: 2.15rem 1.75rem;
-    width:25rem;
+    width:21rem;
     
 }
 
@@ -55,15 +55,50 @@ h3{
     font-weight: 600;
 }
 span{
-    
     font-weight: 400;
 }
 
 .carKm{
+    box-sizing: border-box;
     text-align: center;
     height: auto;
     background: var(--background-Consulta);
     border-radius: 0 0 1.25rem 1.25rem;
+}
+.progressKM{
+    height:1rem;
+    display: flex; 
+    justify-content: space-between;
+    
+    
+}
+.progressKM span{
+    margin-top: 0.04rem;
+    font-size: var(--font-Size);
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    
+}
+.progressKM > div{
+    width:65%;
+    margin-top: 0.35rem;
+    height: 0.25rem;
+    background-color:rgb(172, 165, 165);
+    border-radius: 0.25rem;
+    
+}
+.progressKM > div > div:first-child{
+      height: 0.25rem;
+      width: 30%;
+      background-color: rgb(23, 184, 8);
+      border-radius: 0.25rem;
+    
+}
+
+.IconBar{
+    padding:0.09rem;
+    width: 1rem;
+    height: 1rem;
 }
 
  button{

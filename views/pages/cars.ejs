@@ -21,7 +21,7 @@
 
                     <div class="carInformation">
                         <div>
-                            <div><img src="<%=registro.imagesCar%>"></img></div>
+                            <div><img class="imgCar" src="<%=registro.imagesCar%>"></img></div>
                             <div class="description">
                                 <h1>Informações do Veiculo</h1>
                                 <h2>Veiculo : <span>
@@ -47,12 +47,25 @@
                             </div>
                         </div>
                         <div class="carKm">
-                            <h3>Kilometragem <p>
+                            <h3>Kilometragem </h3>
+                            <div class="progressKM">
+                                <span>
                                     <%=registro.MileageCar%>
-                                </p>
-                                <span>0------------------------------------0</span>
-                            </h3>
-                            <a href="/"> <button>  Retonar</button></a>
+                                </span>
+                              <img class="IconBar" src="./images/inicio.png" alt="Final">
+                                <div>
+                                    <div></div>
+                                </div>
+                                <img class="IconBar" src="./images/conclusao.png" alt="Inicio Bar"></img>
+                                <span>
+                                    <%=registro.MileageCar%>
+                                </span>
+                            </div>
+
+
+
+
+                            <a href="/"> <button> Retonar</button></a>
                         </div>
 
                     </div>
@@ -89,7 +102,7 @@
             </section>
 
         </main>
-        <%- include('../partials/footer')%>
+        <!--  <%- include('../partials/footer')%>-->
 
 </body>
 
