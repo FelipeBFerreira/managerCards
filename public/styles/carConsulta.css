@@ -89,7 +89,7 @@ span{
 }
 .progressKM > div > div:first-child{
       height: 0.25rem;
-      width: 30%;
+      width: 99%;
       background-color: rgb(23, 184, 8);
       border-radius: 0.25rem;
     
