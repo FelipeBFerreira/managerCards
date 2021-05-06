@@ -5,15 +5,17 @@
     --h2-color:#000;
     --background-body: #cae4db;
     --background-Consulta: #caf0f8;
-    --Valor-Progress: 8%;
+    --Valor-Progress: 57%;
 
 }
+
 .carPage{
     box-sizing: border-box;
     align-items: center;
     max-width: 65rem;
     margin-top: -1.75rem;
     display:flex;
+    flex: 1;
   
 }
 
@@ -100,12 +102,14 @@ span{
     
 }
 
-.progressKM > div > p{
-    width: 1%;
+.progressKM > div > span{
+    font-size: var(--font-Size);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    left:var(--Valor-Progress);
     color: blue;
     font-size: var(--font-Size);
     margin-top: 0.55rem;
-    
     transform: translateX(-50%);
     position: absolute;
   
@@ -134,11 +138,11 @@ span{
     color: blue;
 }
 
-.carNotification{
+.carActivity{
     margin-left: 2.75rem;
     background: blue;
 }
-.carNotification img{
+.carActivity img{
     width: 20%;
     height: 20%;
     background: red;
