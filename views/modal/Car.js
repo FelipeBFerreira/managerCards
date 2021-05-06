@@ -6,6 +6,7 @@ let cars = [
         yearCar :  2021,
         imagesCar : "/images/car.png",
         MileageCar: "00000001",
+        NextKmCar: '00001000',
         locationCar : "Localiza",
         ConductorCar : "Aecio"
 

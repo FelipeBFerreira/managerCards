@@ -5,6 +5,7 @@
     --h2-color:#000;
     --background-body: #cae4db;
     --background-Consulta: #caf0f8;
+    --Valor-Progress: 8%;
 
 }
 .carPage{
@@ -69,7 +70,7 @@ span{
     height:1rem;
     display: flex; 
     justify-content: space-between;
-    
+
     
 }
 .progressKM span{
@@ -80,19 +81,34 @@ span{
     
 }
 .progressKM > div{
+    display:flex;
+    flex: 1;
     width:65%;
     margin-top: 0.35rem;
-    height: 0.25rem;
+    height: 4px;
     background-color:rgb(172, 165, 165);
     border-radius: 0.25rem;
+    position: relative;
+    
     
 }
 .progressKM > div > div:first-child{
-      height: 0.25rem;
-      width: 99%;
+      height: 4px;
+      width: var(--Valor-Progress);
       background-color: rgb(23, 184, 8);
       border-radius: 0.25rem;
     
+}
+
+.progressKM > div > p{
+    width: 1%;
+    color: blue;
+    font-size: var(--font-Size);
+    margin-top: 0.55rem;
+    
+    transform: translateX(-50%);
+    position: absolute;
+  
 }
 
 .IconBar{
