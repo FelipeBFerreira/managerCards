@@ -30,24 +30,27 @@
     }
     .carPage{
        flex-direction: column;
+       
      }
-     .carActivity{
-      margin-top: 1rem;
+     .carHistory{
+      margin-right: 1rem;
+            
     }
   }
   
   /* Begin Linha alterado para favorecer a Respansividade de aplicativos de tela menor*/
   @media(max-width: 400px) {
     :root {
-      font-size: 55%; /* 10px */
-            
+      font-size: 55%; /* 10px */      
     }
     .carPage{
       flex-direction: column;
    
     }
-    .carActivity{
-      margin-top: 1rem;
+     .carHistory{
+      margin: 0 auto;
+      margin-right: 1rem;
+      
     }
   }
   

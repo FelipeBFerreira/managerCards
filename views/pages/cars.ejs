@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/carConsulta.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&family=Racing+Sans+One&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&family=Rajdhani:wght@600&family=Racing+Sans+One&display=swap"
         rel="stylesheet">
     <title>Mileage Check</title>
 </head>
@@ -24,23 +25,23 @@
                             <div><img class="imgCar" src="<%=registro.imagesCar%>"></img></div>
                             <div class="description">
                                 <h1>Informações do Veiculo</h1>
-                                <h2>Veiculo : <span>
+                                <h2>Veiculo : <span class="descriptionText">
                                         <%=registro.descriptionCar%>
                                     </span>
                                 </h2>
-                                <h2>Empresa :<span>
+                                <h2>Empresa :<span class="descriptionText">
                                         <%=registro.locationCar%>
                                     </span>
                                 </h2>
-                                <h2>Responsavel:<span>
-                                        <%=registro.ConductorCar%>
+                                <h2>Responsavel:<span class="descriptionText">
+                                        <%=registro.conductorCar%>
                                     </span>
                                 </h2>
-                                <h2>Placa: <span>
+                                <h2>Placa: <span class="descriptionText">
                                         <%=registro.locationCar%>
                                     </span>
                                 </h2>
-                                <h2>Ano: <span>
+                                <h2>Ano: <span class="descriptionText">
                                         <%=registro.yearCar%>
                                     </span>
                                 </h2>
@@ -49,43 +50,86 @@
                         <div class="carKm">
                             <h3>Kilometragem </h3>
                             <div class="progressKM">
-                              <img class="IconBar" src="./images/inicio.png" alt="Final">
+                                <img class="IconBar" src="./images/inicio.png" alt="Final">
                                 <div>
                                     <div></div>
-                                    <span> <%=registro.NextKmCar%></span>
+                                    <span>
+                                        <%=registro.nextKmCar%>
+                                    </span>
                                 </div>
-                                
+
                                 <img class="IconBar" src="./images/conclusao.png" alt="Inicio Bar"></img>
                                 <span>
-                                    <%=registro.MileageCar%>
+                                    <%=registro.mileageCar%>
                                 </span>
                             </div>
                             <a href="/"> <button> Retonar</button></a>
                         </div>
-
                     </div>
-                  
-                    <div class="carActivity">
-                        <div><img src="<%=registro.imagesCar%>"></img></div>
+                    <div class="carHistory">
+                        <h1>Historico de Manutenção do Veiculo: <br>
+                            <%=registro.descriptionCar%>
+                        </h1>
+                        <table class="tableHistory">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Registro
+                                    </th>
+                                    <th>
+                                        Veiculo
+                                    </th>
+                                    <th>
+                                        Manutenção
+                                    </th>
+                                    <th>
+                                        Kilometragem
+                                    </th>
+                                    <th>
+                                        Condutor
+                                    </th>
+                                    <th>
+                                        Data
+                                    </th>
+                                    <th>
+                                        Imagem
+                                    </th>
+                            </thead>
 
-                        <div>
-                            <h2>Veiculo :<%=registro.descriptionCar%>
-                            </h2>
-                            <h2>Empresa : <%=registro.locationCar%>
-                            </h2>
-                            <h2>Responsavel: <%=registro.ConductorCar%>
-                            </h2>
-                            <h2>Placa: <%=registro.locationCar%>
-                            </h2>
-                            <h2>Ano: <%=registro.yearCar%>
-                            </h2>
-                        </div>
-                        <div><span>Kilometragem <%=registro.MileageCar%></span>
-                            0------------------------------------0</div>
-                        <input type="button">Retonar</input>
+                            </tr>
 
+                            <% historyCar.forEach( (historyCar)=> { %>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <%=historyCar.id%>
+                                        </td>
+                                        <td>
+                                            <img src="<%=registro.imagesCar%>"></img>
+                                        </td>
+                                        <td>
+                                            <%=historyCar.descriptionProblem%>
+                                        </td>
+                                        <td>
+                                            <%=registro.mileageCar%>
+                                        </td>
+                                        <td>
+                                            <%=registro.conductorCar%>
+                                        </td>
+                                        <td>
+                                            <%=historyCar.Data%>
+                                        </td>
+                                        <td>
+                                            <a href=<%=historyCar.url%>><button
+                                                    class="buttonImagem">Pesquisar</button></a>
+                                        </td>
+
+                                    </tr>
+  
+                                </tbody>
+                                <% }) %>
                     </div>
-
+                    </table>
                 </div>
 
 

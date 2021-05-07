@@ -5,10 +5,10 @@ let cars = [
         descriptionCar : "FIAT ARGO 1.0",
         yearCar :  2021,
         imagesCar : "/images/car.png",
-        MileageCar: "00000001",
-        NextKmCar: '00001000',
+        mileageCar: "00000001",
+        nextKmCar: '00001000',
         locationCar : "Localiza",
-        ConductorCar : "Aecio"
+        conductorCar : "Aecio"
 
     },
     {
@@ -16,9 +16,9 @@ let cars = [
         descriptionCar : "FIAT ARGO 2.0",
         yearCar :  2021,
         imagesCar : "/images/car.png",
-        MileageCar: 10000000,
+        mileageCar: 10000000,
         locationCar : "Localiza",
-        ConductorCar : "Celso"
+        conductorCar : "Celso"
 
     },
     {
@@ -26,9 +26,9 @@ let cars = [
         descriptionCar : "RENAULT 2.0",
         yearCar :  2020,
         imagesCar : "/images/car.png",
-        MileageCar: 10000200,
+        mileageCar: 10000200,
         locationCar : "Unidas",
-        ConductorCar : "Vitor"
+        conductorCar : "Vitor"
 
     },
     {
@@ -36,9 +36,9 @@ let cars = [
         descriptionCar : "RENAULT 2.0",
         yearCar :  2020,
         imagesCar : "/images/car.png",
-        MileageCar: 10000200,
+        mileageCar: 10000200,
         locationCar : "Unidas",
-        ConductorCar : "Vitor"
+        conductorCar : "Vitor"
 
     },
     {
@@ -46,9 +46,9 @@ let cars = [
         descriptionCar : "RENAULT 2.0",
         yearCar :  2020,
         imagesCar : "/images/car.png",
-        MileageCar: 10000200,
+        mileageCar: 10000200,
         locationCar : "Unidas",
-        ConductorCar : "Vitor"
+        conductorCar : "Vitor"
 
     },
     {
@@ -56,19 +56,70 @@ let cars = [
         descriptionCar : "RENAULT 2.0",
         yearCar :  2020,
         imagesCar : "/images/car.png",
-        MileageCar: 10000200,
+        mileageCar: 10000200,
         locationCar : "Unidas",
-        ConductorCar : "Vitor"
+        conductorCar : "Vitor"
 
     }
+];
+
+
+historyCar=
+[
+    {   
+        id: 1,
+        idCar: 1,
+        descriptionProblem: 'Troca de Oleo e Reparo',
+        Data:'21-02-2021',
+        url:'',
+    },
+    {   
+        id: 2,
+        idCar: 1,
+        descriptionProblem: 'Vistoria de 20mil KM',
+        Data:'24-04-2021',
+        url:'https://avatars.githubusercontent.com/u/18500174?v=4',
+    },
+    {   
+        id: 3,
+        idCar: 1,
+        descriptionProblem: 'Avaria do Veiculo',
+        Data:'01-05-2021',
+        url:'https://avatars.githubusercontent.com/u/18500174?v=4',
+    },
+    {   
+        id: 4,
+        idCar: 1,
+        descriptionProblem: 'Troca de Oleo e Reparo',
+        Data:'21-02-2021',
+        url:'',
+    },
+    {   
+        id: 5,
+        idCar: 1,
+        descriptionProblem: 'Vistoria de 20mil KM',
+        Data:'24-04-2021',
+        url:'https://avatars.githubusercontent.com/u/18500174?v=4',
+    },
+    {   
+        id: 6,
+        idCar: 1,
+        descriptionProblem: 'Avaria do Veiculo',
+        Data:'01-05-2021',
+        url:'https://avatars.githubusercontent.com/u/18500174?v=4',
+    },
+    
 ];
 
 /** Estou implementando o model de abstração de dados do conceito MVC, exportando o metodo Get com a base de dados criado para o loginController */
 
 module.exports = {
      
-    get(){
+    getCar(){
         return cars;
+    },
+    getHistoryCar(){
+        return historyCar;
     }
 
 }
