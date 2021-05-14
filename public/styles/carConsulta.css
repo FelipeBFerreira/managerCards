@@ -3,7 +3,8 @@
 :root{
     --font-Size: 0.75rem;
     --colorTextGeral:#2E384D;
-    --background-Consulta: #fff;
+    --background-Description:#F2F3F5;
+    --background-History: #fff;
     --Valor-Progress: 57%;
     --ColorDescription: #666666;
     --color-table:#F2F3F5;
@@ -21,19 +22,22 @@
     display:flex;
     justify-content:space-between;
     position: relative;
-    height: 25rem;
+    
     
 }
 .carInformation{
     margin-top:-3.20rem;
     position: relative;
+    background: var(--background-Description);
+    border-radius: 1.25rem;
+    
 }
 .carInformation div:first-child{
       width: 30rem;
       display:flex;
       justify-content: space-between;
-      background: var(--background-Consulta);
-      border-radius: 1.25rem 1.25rem 0 0;
+      
+      
 }
 
 .imgCar{
@@ -149,7 +153,7 @@
 }
 
 .carHistory{
-    background: var(--background-Consulta);
+    background: var(--background-History);
     border-radius: 1.25rem;
     
     
@@ -158,6 +162,13 @@
     text-align: center;
     margin-top: 0.50rem;
     margin-bottom: 0.25rem;
+    color: var(--ColorDescription);
+}
+.carHistory h1 > span{
+    text-align: center;
+    margin-top: 0.50rem;
+    margin-bottom: 0.25rem;
+    color: var(--ColorDescription);
 }
 .tableHistory{
     width: 100%;

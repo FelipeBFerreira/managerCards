@@ -11,6 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&family=Rajdhani:wght@600&family=Racing+Sans+One&display=swap"
         rel="stylesheet">
+        <script src="./scripts/scriptCar.js" defer></script>
     <title>Mileage Check</title>
 </head>
 
@@ -68,7 +69,9 @@
                     </div>
                     <div class="carHistory">
                         <h1>Historico de Manutenção do Veiculo: <br>
-                            <%=registro.descriptionCar%>
+                            <span>
+                                <%=registro.descriptionCar%>
+                            </span>
                         </h1>
                         <table class="tableHistory">
                             <thead>
@@ -125,7 +128,7 @@
                                         </td>
 
                                     </tr>
-  
+
                                 </tbody>
                                 <% }) %>
                     </div>

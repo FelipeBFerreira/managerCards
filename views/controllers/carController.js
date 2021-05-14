@@ -20,5 +20,7 @@ module.exports = {
          res.render("pages/cars", { registro: cars , historyCar: CarHistory});
     }
 
+    
+
 
 }

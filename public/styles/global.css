@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 /* user-agent font-size is 16px, let's make it responsive */
 @media(max-width: 1080px) {
     html {
@@ -56,9 +55,9 @@
   
 :root{
     --logoColor: #FFF;
-    --headerBackground:#00303f;
-    --bodyBackground: #fff;
     --labelColor: #015249;
+    --headerBackground:#091820;
+    --bodyBackground: #fff;
     
 }
 
