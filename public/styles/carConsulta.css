@@ -42,7 +42,7 @@
 }
 
 .imgCar{
-    width: 18.63rem;
+    width: 20.63rem;
     height: 15.50rem;
     border-radius: 2rem;
     
@@ -50,9 +50,8 @@
 
 .grid-description{
     display: grid;
-    width:20rem;
     grid-template-columns: auto;
-    padding: 0.85rem;
+    padding: 0.85rem 0.85rem 0.85rem 0 ;
     
 }
 
