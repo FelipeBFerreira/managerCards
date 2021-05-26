@@ -5,9 +5,11 @@
     --colorTextGeral:#2E384D;
     --background-Description:#F2F3F5;
     --background-History: #fff;
-    --Valor-Progress: 57%;
+    --Valor-Progress: 10%;
     --ColorDescription: #666666;
     --color-table:#F2F3F5;
+    --grid-titulo:#2E384D;
+    --grid-background:#F2F3F5;
 
 }
 .container{
@@ -17,8 +19,7 @@
 
 .carPage{
     box-sizing: border-box;
-    align-items: center;
-    max-width: 70rem;
+    max-width: 80rem;
     display:flex;
     justify-content:space-between;
     position: relative;
@@ -26,14 +27,14 @@
     
 }
 .carInformation{
-    margin-top:-3.20rem;
+    
     position: relative;
     background: var(--background-Description);
     border-radius: 1.25rem;
     
 }
 .carInformation div:first-child{
-      width: 30rem;
+      width: 32rem;
       display:flex;
       justify-content: space-between;
       
@@ -41,28 +42,39 @@
 }
 
 .imgCar{
-    width: 15.63rem;
-    height: 12.50rem;
+    width: 18.63rem;
+    height: 15.50rem;
     border-radius: 2rem;
     
 }
 
-.description{
-    padding: 2.15rem 1.75rem;
-    width:21rem;
+.grid-description{
+    display: grid;
+    width:20rem;
+    grid-template-columns: auto;
+    padding: 0.85rem;
     
 }
 
-.description h1 ,h2 ,h3{
+.grid-description, h1 ,h2 ,h3{
     
     font-size: var(--font-Size);
     color: var(--colorTextGeral);
     font-family: 'Inter', sans-serif;
     font-weight: 600;
-    margin-bottom: 0.65rem;
-    padding: 0 0.25rem
+        
 }
-
+.grid-itens{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+    font-size: var(--font-Size);
+    text-align: center;
+}
+.grid-itens:first-child{
+    background-color:var(--grid-titulo);
+    color:#fff;
+}
 
 .descriptionText{
     font-size: var(--font-Size);
@@ -75,6 +87,7 @@
 }
 
 .carKm{
+    margin-top: 1.75rem;
     box-sizing: border-box;
     text-align: center;
     height: auto;

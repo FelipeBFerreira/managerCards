@@ -1,5 +1,4 @@
-const car = require('../modal/Car')
-
+const car = require('../modal/Car');
 
 module.exports = {
     /** Para implementar o conceito MVC  estou solicitando ao model Car atraves do metodo Get os dados */
@@ -13,14 +12,16 @@ module.exports = {
         const { id } = req.params;
         const datas = await car.getCar();
         const CarHistory = await car.getHistoryCar();
+        let nextKilometragem;
+           
 
-       
         /*Sempre ao realizar o find com id precisa realizar a conversão para Number no Javascript*/
         const cars = datas.find(cars => Number(cars.id) === Number(id))
-         res.render("pages/cars", { registro: cars , historyCar: CarHistory});
+        nextKilometragem =  Number(cars.nextKmCar) + Number(cars.mileageCar);
+        res.render("pages/cars", { registro: cars, historyCar: CarHistory, nextKilometragem: nextKilometragem });
+
     }
 
     
-
 
 }

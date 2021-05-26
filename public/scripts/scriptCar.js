@@ -1,6 +1,4 @@
-let valor = "99%";
-
-
+let valor = "90";
 
 if(valor == "100%"){
     document.querySelector(".progressKM > div > span").outerHTML = "<span></span>";

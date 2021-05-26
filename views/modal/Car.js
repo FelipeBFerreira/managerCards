@@ -5,8 +5,8 @@ let cars = [
         descriptionCar : "FIAT ARGO 1.0",
         yearCar :  2021,
         imagesCar : "/images/car.png",
-        mileageCar: "00000001",
-        nextKmCar: '00001000',
+        mileageCar: 10,
+        nextKmCar: 1000,
         locationCar : "Localiza",
         conductorCar : "Aecio"
 
@@ -108,6 +108,7 @@ historyCar=
         Data:'01-05-2021',
         url:'https://avatars.githubusercontent.com/u/18500174?v=4',
     },
+    
     
 ];
 

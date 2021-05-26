@@ -11,7 +11,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&family=Rajdhani:wght@600&family=Racing+Sans+One&display=swap"
         rel="stylesheet">
-        <script src="./scripts/scriptCar.js" defer></script>
+    <!--<script src="./scripts/StatusBar.js" defer></script>-->
+
     <title>Mileage Check</title>
 </head>
 
@@ -23,26 +24,26 @@
 
                     <div class="carInformation">
                         <div>
-                            <div><img class="imgCar" src="<%=registro.imagesCar%>"></img></div>
-                            <div class="description">
-                                <h1>Informações do Veiculo</h1>
-                                <h2>Veiculo : <span class="descriptionText">
+                            <img class="imgCar" src="<%=registro.imagesCar%>"></img>
+                            <div class="grid-description">
+                                <h1 class="grid-itens">Informações do Veiculo</h1>
+                                <h2 class="grid-itens">Veiculo : <span class="descriptionText">
                                         <%=registro.descriptionCar%>
                                     </span>
                                 </h2>
-                                <h2>Empresa :<span class="descriptionText">
+                                <h2 class="grid-itens">Empresa :<span class="descriptionText">
                                         <%=registro.locationCar%>
                                     </span>
                                 </h2>
-                                <h2>Responsavel:<span class="descriptionText">
+                                <h2 class="grid-itens">Responsavel:<span class="descriptionText">
                                         <%=registro.conductorCar%>
                                     </span>
                                 </h2>
-                                <h2>Placa: <span class="descriptionText">
+                                <h2 class="grid-itens">Placa: <span class="descriptionText">
                                         <%=registro.locationCar%>
                                     </span>
                                 </h2>
-                                <h2>Ano: <span class="descriptionText">
+                                <h2 class="grid-itens">Ano: <span class="descriptionText">
                                         <%=registro.yearCar%>
                                     </span>
                                 </h2>
@@ -55,13 +56,17 @@
                                 <div>
                                     <div></div>
                                     <span>
-                                        <%=registro.nextKmCar%>
+                                        <% if (!registro.nextKmCar) { %>
+                                            Sem proximo KM
+                                            <% } else { %>
+                                                <%=registro.mileageCar%>
+                                                    <% }%>
                                     </span>
                                 </div>
 
                                 <img class="IconBar" src="./images/conclusao.png" alt="Inicio Bar"></img>
                                 <span>
-                                    <%=registro.mileageCar%>
+                                    <%=nextKilometragem%>
                                 </span>
                             </div>
                             <a href="/"> <button> Retonar</button></a>
