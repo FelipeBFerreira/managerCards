@@ -53,6 +53,7 @@
     grid-template-columns: auto;
     padding: 0.85rem 0.85rem 0.85rem 0 ;
     
+    
 }
 
 .grid-description, h1 ,h2 ,h3{
@@ -201,7 +202,7 @@ thead th{
  
 }
 tbody tr td > img{
-    width: 3.55rem;
+    width: 4.55rem;
 }
 
 tbody td{
@@ -211,11 +212,17 @@ tbody td{
     
 }
 
+tbody td:last-child{
+    width: 6rem;
+    
+}
+
+
 .buttonImagem{
     font-size: var(--font-Size);
     font-family: 'Inter', sans-serif;
     width: 4.75rem;
-    height: 1.75rem;
+    height: 1.55rem;
     border-radius: 1.75rem;
     border:none;
     color: #fff;
